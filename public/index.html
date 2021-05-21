@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/script.css">
+    <title>Lógica Computacional</title>
+</head>
+<body>
+    <header>
+        <h1>Lógica Computacional<h1>
+    </header>
+
+    <div class="div-head">
+        <h2>Exercício 1</h2>
+    </div>
+    <div class="div-body">
+        <input type="number" 
+        id="numeroEx1" 
+        placeholder="Informe um número">
+
+        <button onclick="contarEx1()">
+            Contar
+        </button>
+
+        <textarea id="resultadoEx1" 
+            cols="102" rows="25"
+            readonly></textarea>
+    </div>
+
+    <script>
+        const contarEx1 = function(){
+            let numero = document.getElementById('numeroEx1').value
+            let resultado = "Resposta"
+            for (let i = 0; i < numero; i++){
+                resultado += '\n\n' + (i + 1)
+            }
+            document.getElementById('resultadoEx1').value = resultado
+        }
+    </script>
+</body>
+</html>
