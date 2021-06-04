@@ -19,14 +19,14 @@ header{
     border-radius: 20px;
     color: #904609;
     text-align: center;
-    width: 50%;
+    width: 75%;
 }
 
 .div-body{
     border: 2px solid #904609;
     border-radius: 20px;
     text-align: center;
-    width: 50%;
+    width: 75%;
     margin: auto;
     padding-top: 16px;
 }
@@ -54,6 +54,7 @@ textarea{
     text-align: center;
     padding: 8px;
     margin-bottom: 16px;
+    width: 90%;
 }
 
 button{
@@ -69,4 +70,25 @@ button{
     text-align: center;
     vertical-align: center;
     line-height: 2.0;
+}
+
+@media screen and (max-width:900px) {
+    .div-head{
+        width: 85%;
+    }
+
+    .div-body{
+        width: 85%;
+    }
+   
+}
+
+@media screen and (max-width:500px) {
+    .div-head{
+        width: 98%;
+    }
+
+    .div-body{
+        width: 98%;
+    }
 }
