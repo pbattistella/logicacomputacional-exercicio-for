@@ -32,8 +32,17 @@ nav li > a{
     color: #214772;
     border-bottom: 2px solid #214772;
     font-size: large;
+    
 }
 
+.active{
+    font-weight: bold;
+}
+
+nav li > a:hover{
+    color: #6b0d34;
+    border-bottom: 2px solid #6b0d34;
+}
 .container{
     border: 1px solid black;
     border-radius: 0.35em;
@@ -47,12 +56,23 @@ nav li > a{
     justify-content: center;
 }
 
+.row-color-aliceblue{
+    background-color: aliceblue;
+}
+
 .col{
     /*altura provisória... só para bonito*/
     height: 500px;
     padding: 24px;
-    width: 33%;
-    text-align: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col img{
+    width: 300px;
+    border-radius: 0.85em;
 }
 
 footer{
@@ -71,8 +91,55 @@ footer li{
     margin: 8px;
 }
 
+form{
+    width: 100%;
+}
+
+.row-input{
+    padding: 16px;
+    text-align: center;
+}
+
+input{
+    width: 70%;
+    border-radius: 0.45em;
+    padding: 8px;
+    text-align: center;
+    border:1px solid #214772;
+    background-color: #fcfcfc;
+    
+}
+
+button{
+    width: 72%;
+    border-radius: 0.45em;
+    padding: 8px;
+    background-color: #214772;
+    outline: none;
+    color: #fff;
+
+}
+
+.h3-title{
+    color: #214772;
+}
 @media screen and (max-width: 800px) {
     .container{
         width: 97%;
+    }
+    .row{
+        display: block;
+    }
+
+    .col{
+        width: 94%;
+    }
+
+    nav ul{
+        display: block;
+    }
+    nav li{
+        
+        margin-bottom: 16px;
     }
 }

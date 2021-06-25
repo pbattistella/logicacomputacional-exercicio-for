@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>SA 2º Ano SESI-SENAI</title>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
@@ -15,47 +14,45 @@
     </header>
     <nav>
         <ul>
-            <li><a class="active" href="/">Principal</a></li>
-            <li><a href="eficiencia.html">Eficiência</a></li>
+            <li><a href="/">Principal</a></li>
+            <li><a class="active" href="eficiencia.html">Eficiência</a></li>
             <li><a href="#">Máquina</a></li>
             <li><a href="#">Sobre</a></li>   
         </ul>
     </nav>
 
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="./img/termo1.png" alt="imagem termodinâmica">
+        <form>
+            <div class="row row-input">
+                <h3 class="h3-title">Cálculo da Eficiência Energética</h3>
             </div>
-            <div class="col">
-                texto
-            </div>
-        </div>
 
-        <div class="row row-color-aliceblue">
-            <div class="col">
-                texto
-            </div>
-            <div class="col">
-                <img src="./img/termo2.png" alt="">            </div>
-        </div>
 
-        <div class="row">
-            <div class="col">
-                <img src="./img/termo3.png" alt="">
+            <div class="row row-input">
+                <input type="number" id="valor1" placeholder="Valor 1">
             </div>
-            <div class="col">
-                texto
-            </div>
-        </div>
 
-    </div>  
-    
+            <div class="row row-input">
+                <input type="number" id="valor2" placeholder="Valor 2">
+            </div>
+
+            <div class="row row-input">
+                <input type="number" id="resultado" readonly>
+            </div>
+
+            <div class="row row-input">
+                <button>Calcular</button>
+            </div>
+        </form>
+
+    </div>
+
     <footer>
         <ul>
             <li>sa2ao@senai.br</li>
             <li> (48) 3322 - 1234</li>
         </ul>
     </footer>
+  
 </body>
 </html>
